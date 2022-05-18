@@ -23,14 +23,20 @@ import {HiOutlineBriefcase} from 'react-icons/hi'
 /*import telephone icon*/ 
 import {BsTelephone} from 'react-icons/bs'
 
+/*import useState. This helps change the active link when it is <changed></changed*/   
+import { useState } from 'react'
+
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
+
+  /*set the active nav to the one in bracket. If classname is that, make it active else, leave it line 35-40*/
   return (
     <nav>
-      <a href="#"><BiHomeHeart/></a>
-      <a href="#about"><AiOutlineUser/></a>
-      <a href="#experience"><RiComputerLine/></a>
-      <a href="#portfolio"><HiOutlineBriefcase/></a>
-      <a href="#contact"><BsTelephone/></a>
+      <a href="#"onClick={()=> setActiveNav('#')}  className={activeNav==='#' ? 'active': ''}><BiHomeHeart/></a>
+      <a href="#about"onClick={()=> setActiveNav('#about')} className={activeNav==='#about' ? 'active': ''}><AiOutlineUser/></a>
+      <a href="#experience"onClick={()=> setActiveNav('#experience')}  className={activeNav==='#experience' ? 'active': ''}><RiComputerLine/></a>
+      <a href="#portfolio"onClick={()=> setActiveNav('#portfolio')}  className={activeNav==='#portfolio' ? 'active': ''}><HiOutlineBriefcase/></a>
+      <a href="#contact"onClick={()=> setActiveNav('#contact')}  className={activeNav==='#contact' ? 'active': ''}><BsTelephone/></a>
   
     </nav>
   )
