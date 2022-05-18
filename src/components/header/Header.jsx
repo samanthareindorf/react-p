@@ -8,6 +8,9 @@ import './header.css'
 /*import the CALL to action (CTA) for the buttons */ 
 import CTA from './CTA'
 
+/*import the image to be used in line 24 */
+import phot from '../../assets/phot.png'
+
 const Header = () => {
   return (
   <header>
@@ -16,6 +19,13 @@ const Header = () => {
       <h1>Samantha Reindorf</h1>
       <h5 className="text-light">FullStack Developer</h5>
       <CTA />
+
+
+      <div className="myImg">
+        <img src={phot} alt="me" />
+      </div>
+
+      <a href="#contact" className='scroll__down'>Scroll Down</a>
     </div>
   </header>
   )
