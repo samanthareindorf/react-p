@@ -11,6 +11,9 @@ import CTA from './CTA'
 /*import the image to be used in line 24 */
 import phot from '../../assets/phot.png'
 
+/*import socials into header and place on line 26*/
+import Socials from './Socials'
+
 const Header = () => {
   return (
   <header>
@@ -20,7 +23,8 @@ const Header = () => {
       <h5 className="text-light">FullStack Developer</h5>
       <CTA />
 
-
+      <Socials />
+      
       <div className="myImg">
         <img src={phot} alt="me" />
       </div>
