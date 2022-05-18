@@ -1,6 +1,8 @@
 
+import React from 'react';
 /*import reactDOM for proper linkage*/
-import { ReactDOM } from 'react';
+
+import ReactDOM  from 'react-dom';
 
 /*for app component, after start server in terminal*/
 import App from './App'
