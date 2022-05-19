@@ -61,7 +61,7 @@ input, textarea {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap:2rem;
-        display: -webkit-box;
+      
     }
 
     .contact__option {
@@ -70,13 +70,17 @@ input, textarea {
 
     #contact  h2 {
 
-        padding-top: 30rem;
-        overflow: hidden;
+        display: none;
     }
 
     #contact  h5 {
         display: none;
 }
+
+
+    form {
+        padding-top: 100rem;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -89,6 +93,6 @@ input, textarea {
     
 
     form {
-        padding-top: 77rem;
+        padding-top: 90rem;
     }
 }

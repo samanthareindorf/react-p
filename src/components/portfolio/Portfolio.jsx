@@ -21,7 +21,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className='portfolio__item'>
+        <article className='portfolio__item' id='botom'>
           <div className="portfolio__item__image">
             <img src={dash1} alt="first" />
 
