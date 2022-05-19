@@ -61,18 +61,34 @@ input, textarea {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap:2rem;
+        display: -webkit-box;
     }
 
     .contact__option {
-        margin: 15.3rem 6.3rem 0rem 4.3rem;
+        display: none;
     }
 
-    #contact h5 {
-        
+    #contact  h2 {
 
+        padding-top: 30rem;
+        overflow: hidden;
     }
+
+    #contact  h5 {
+        display: none;
+}
 }
 
 @media screen and (max-width:600px) {
+
+    .container.container.contact__container {
+
+        width: var(--container-width-sm);
+
+    }
     
+
+    form {
+        padding-top: 77rem;
+    }
 }

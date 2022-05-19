@@ -113,10 +113,15 @@
     }
 
     .about__content p {
-        margin: 1.5rem 0;
-        overflow: hidden;
-        display:-moz-stack
+        /* overflow: hidden; */
+        display:list-item;
+        padding-bottom: 5rem;
         
+    }
+
+    #contact {
+        margin-bottom: 20rem;
+        display:inline;
     }
     
 }

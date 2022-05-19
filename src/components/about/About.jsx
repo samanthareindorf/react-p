@@ -59,7 +59,7 @@ const About = () => {
             and get to know more. 
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <a href="#contact" className='btn btn-primary' id='contact'>Let's Talk</a>
 
         </div>
       </div>
