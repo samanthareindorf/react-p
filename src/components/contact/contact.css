@@ -61,16 +61,18 @@ input, textarea {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap:2rem;
+        margin-top: 2rem;
       
     }
 
     .contact__option {
-        display: none;
+     
+       gap: 4rem;
+   
     }
 
     #contact  h2 {
-
-        display: none;
+        margin-top: 75rem;
     }
 
     #contact  h5 {
@@ -78,9 +80,7 @@ input, textarea {
 }
 
 
-    form {
-        padding-top: 100rem;
-    }
+    
 }
 
 @media screen and (max-width:600px) {
@@ -88,11 +88,18 @@ input, textarea {
     .container.container.contact__container {
 
         width: var(--container-width-sm);
+        margin-top: 55rem;
+        
 
     }
-    
 
-    form {
-        padding-top: 120rem;
+    .container.contact__container h2 {
+      display: none;
+      overflow: hidden;
     }
+
+
+
+
+  
 }

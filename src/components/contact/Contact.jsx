@@ -10,8 +10,27 @@ import {FiMail} from 'react-icons/fi'
 /*import call icon */
 import {BsFillTelephoneFill} from 'react-icons/bs'
 
+/*import emailjs for email */
+import  { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
  
 const Contact = () => {
+
+
+  const form =useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6i57djm', 'template_zx6xp0o', form.current, 'ZCF5tfoatOCL_8tIS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -35,7 +54,7 @@ const Contact = () => {
 
         </div>
         {/* END OF CONTACT */}
-        <form action="">
+        {/* <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Full name' required />
 
           <input type="email" name='email' placeholder='Email' required  />
@@ -43,7 +62,7 @@ const Contact = () => {
           <textarea name="message" rows="7" placeholder='Your message' required></textarea>
           <button type='submit' className='btn btn-primary'>Submit Message</button>
         </form>
-      
+       */}
 
 
 
